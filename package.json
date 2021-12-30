@@ -1,0 +1,36 @@
+{
+  "name": "ruben_ortiz_portfolio",
+  "version": "1.0.0",
+  "description": "Ruben's Portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ruben3rd/ruben_ortiz_portfolio.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sequelize",
+    "postgresql",
+    "rest",
+    "api"
+  ],
+  "author": "\"express\",",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ruben3rd/ruben_ortiz_portfolio/issues"
+  },
+  "homepage": "https://github.com/Ruben3rd/ruben_ortiz_portfolio#readme"
+}
