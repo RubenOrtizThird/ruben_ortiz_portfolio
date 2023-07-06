@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 5em;
+    padding-left: 10em;
+    height: 30em !important;
+    width: 100% !important;
+    background-color: white;
+    background-image: url('../../assets/img/header_bg.webp');
+    background-size: 100% 100%;
+    position: fixed;
+    top: 4em;
+    z-index: -999;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F5F5F5;
+    width: 100%;
+    margin-top: 34em
+}
+
+mat-toolbar {
+    position: fixed;
+    top: 0;
+}
+
+.flex-item {
+    margin-top: 3em;
+    max-width: 50%;
+}
+
+.spacer {
+    flex: 1 1 auto;
+  }
+
+.img {
+    max-height: 40em;
+    max-width: 30em;
+}
+
+p {
+    line-height: 1.6;
+}
