@@ -5,17 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-// Modules
-import { HomeModule } from './home/home.module';
+// Pages
+import { HomeModule } from './pages/home/home.module';
+
+// Components
+import { AngularMaterialModule } from 'angular-material/angular-material.module';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AngularMaterialModule,
     HomeModule
   ],
   providers: [],
