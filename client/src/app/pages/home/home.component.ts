@@ -9,7 +9,17 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    console.log('HELLO DUDE');
+  }
+
+  openLinkedIn() {
+    window.open("https://www.linkedin.com/in/ruben-ortiz-third/", "_blank");
+    window.location.href = "mailto:user@example.com?subject=Subject&body=message%20goes%20here";
+  }
+
+  openEmail() {
+    window.location.href = "mailto:RubenOrtizThird@gmail.com?subject=Business Inquiry&body=";
   }
 
 }

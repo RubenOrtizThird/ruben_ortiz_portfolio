@@ -10,7 +10,7 @@
     background-image: url('../../../assets/img/header_bg.jpg');
     background-size: 100% 100%;
     position: fixed;
-    top: 4em;
+    top: 0;
     z-index: -999;
 }
 
@@ -58,6 +58,14 @@
     max-height: 30em;
     max-width: 20em;
     margin-bottom: 3em;
+}
+
+.linkedin_icon {
+    content: url("../../../assets/img/linkedin_icon.png");
+}
+
+.pro-image {
+    content: url("../../../assets/img/Ruben_Pro.jpg");
 }
 
 .pic-header {
