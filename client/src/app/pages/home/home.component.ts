@@ -9,8 +9,19 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  isMobile = false;
+
   ngOnInit() {
-    console.log('HELLO DUDE');
+
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      // true for mobile device
+      console.log('MOBILE');
+      this.isMobile = true;
+    } else {
+      // false for not mobile device
+      console.log('DESKTOP');
+      this.isMobile = true;
+    };
   }
 
   openLinkedIn() {
