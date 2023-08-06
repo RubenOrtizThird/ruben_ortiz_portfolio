@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { JobDescriptionComponent } from '../job-description/job-description.component';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
   isMobile = false;
 
@@ -20,17 +24,42 @@ export class HomeComponent implements OnInit {
     } else {
       // false for not mobile device
       console.log('DESKTOP');
-      this.isMobile = true;
+      this.isMobile = false;
     };
   }
 
   openLinkedIn() {
     window.open("https://www.linkedin.com/in/ruben-ortiz-third/", "_blank");
-    window.location.href = "mailto:user@example.com?subject=Subject&body=message%20goes%20here";
   }
 
   openEmail() {
     window.location.href = "mailto:RubenOrtizThird@gmail.com?subject=Business Inquiry&body=";
+  }
+
+  openJobDescription(jobSelection: any) {
+
+    if(!this.isMobile) { // Desktop Modal
+
+      const dialogRef = this.dialog.open(JobDescriptionComponent, {
+        data: {job: jobSelection},
+        maxWidth: '40vw',
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+
+    } else { // Mobile Modal
+
+      const dialogRef = this.dialog.open(JobDescriptionComponent, {
+        data: {job: jobSelection},
+      });
+
+      dialogRef.afterClosed().subscribe(result => {
+        console.log(`Dialog result: ${result}`);
+      });
+
+    }
   }
 
 }

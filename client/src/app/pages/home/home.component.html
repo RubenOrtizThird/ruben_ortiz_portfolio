@@ -13,20 +13,23 @@
 
   <!-- CONTAINER 1 (PICTURE & BIO) -->
   <div class="container1">
-
     <div class="flex-item">
       <mat-card style="background-color: #ededed;">
         <mat-card-header class="pic-header">
           <div class="pic-header">
-            <mat-icon class="pic-icon" style="margin-right: 5px;" (click)="openEmail()">
+            <mat-icon
+              class="pic-icon"
+              style="margin-right: 5px;"
+              (click)="openEmail()"
+            >
               local_post_office</mat-icon
             >
 
-            <img class="pic-icon linkedin_icon" (click)="openLinkedIn()"/>
+            <img class="pic-icon linkedin_icon" (click)="openLinkedIn()" />
           </div>
         </mat-card-header>
         <mat-card-content>
-          <img class="img pro-image"/>
+          <img class="img pro-image" />
         </mat-card-content>
       </mat-card>
     </div>
@@ -40,9 +43,8 @@
       <p>
         Over the last 4 years, I've had the opportunity to develop for a handful
         of awesome companies / clients as a consultant and continue to do so
-        today. My work includes developing web apps,
-        creating backend servers, handling small-scale DevOps, and
-        adapting with technology.
+        today. My work includes developing web apps, creating backend servers,
+        handling small-scale DevOps, and adapting with technology.
       </p>
     </div>
   </div>
@@ -54,16 +56,16 @@
     </div>
 
     <!-- WORK ITEM 1 -->
-    <div class="flex-item item">
+    <div class="flex-item item" (click)="openJobDescription('EY')">
       <h3 style="color: #43a6c6;">
-        Farm Bureau Mutual Insurance
+        Ernst & Young
         <span style="color: #848884;">(2022-2023)</span>
       </h3>
 
       <div>
         <p style="color: #848884;">
-          Guidewire based application designed for FBMI employees to aid
-          customers.
+          Guidewire based application designed for Farm Bureau Mutual Insurance
+          employees to aid customers with insurance.
         </p>
       </div>
 
@@ -101,14 +103,15 @@
     </div>
 
     <!-- WORK ITEM 2 -->
-    <div class="flex-item item">
+    <div class="flex-item item" (click)="openJobDescription('CRS')">
       <h3 style="color: #43a6c6;">
-        Geotitle <span style="color: #848884;">(2020-2021)</span>
+        Courthouse Research Specialists
+        <span style="color: #848884;">(2020-2021)</span>
       </h3>
 
       <div>
         <p style="color: #848884;">
-          Web application design for employee and project management.
+          Web application designed for employee and project management.
         </p>
       </div>
 
@@ -146,7 +149,7 @@
     </div>
 
     <!-- WORK ITEM 3 -->
-    <div class="flex-item item">
+    <div class="flex-item item" (click)="openJobDescription('CBI')">
       <h3 style="color: #43a6c6;">
         Conrad Blucher Institute of Surveying & Science
         <span style="color: #848884;">(2019-2020)</span>
@@ -154,7 +157,7 @@
 
       <div>
         <p style="color: #848884;">
-          Worked on multiple projects throught the course of one and a half
+          Worked on multiple GIS based projects through the course of one and a half
           years.
         </p>
       </div>

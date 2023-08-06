@@ -1,0 +1,66 @@
+.modal_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+}
+
+span{
+    display:block;
+    width:100%; /*or whatever width you want the effect of <hr>*/
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.ey_logo {
+    content: url("../../../assets/img/EY_logo.png");
+    height: auto;
+    margin-bottom: 15px;
+
+    // Mobile
+    @media only screen and (max-width: 768px) {
+        max-width: 40%;
+    }
+
+    // Desktop
+    @media screen and (min-width: 768px) { 
+        max-width: 20%;
+    }
+}
+
+.crs_logo {
+    content: url("../../../assets/img/CRS_logo.png");
+    height: auto;
+    margin-bottom: 15px;
+
+    // Mobile
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+    }
+
+    // Desktop
+    @media screen and (min-width: 768px) { 
+        max-width: 100%;
+    }
+}
+
+.cbi_logo {
+    content: url("../../../assets/img/CBI_logo.png");
+    height: auto;
+    margin-bottom: 15px;
+
+    // Mobile
+    @media only screen and (max-width: 768px) {
+        max-width: 110%;
+    }
+
+    // Desktop
+    @media screen and (min-width: 768px) { 
+        max-width: 80%;
+    }
+}
+
+p {
+    padding-left: 10px;
+    line-height: 1.5;
+}

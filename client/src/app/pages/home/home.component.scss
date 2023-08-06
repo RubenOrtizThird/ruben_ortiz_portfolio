@@ -25,6 +25,7 @@
         padding-top: 1em;
         background-color: white;
         background-image: url('../../../assets/img/header_bg.jpg');
+        background-size: cover;
         position: fixed;
         top: 0;
         z-index: -999;
@@ -32,17 +33,27 @@
 }
 
 .container1 {
-    display: flex;
-    justify-content: center;
-    background-color: #f9f9f9;
-    width: 100%;
-    margin-top: 34em;
-    padding-bottom: 3em;
+
+    // Desktop
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        background-color: #f9f9f9;
+        width: 100%;
+        margin-top: 34em;
+        padding-bottom: 3em;
+    }
 
     // Mobile
     @media only screen and (max-width: 768px) {
+        display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: center;
+        background-color: #f9f9f9;
+        width: 100%;
+        margin-top: 29em;
+        padding-bottom: 3em;
     }
 }
 
