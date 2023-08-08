@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 10em;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkedin_icon {
+    content: url("../../../assets/img/linkedin_icon.png");
+}
+
+.pic-header {
+    margin-bottom: 1em;
+}
+
+.pic-icon:hover {
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+    cursor: pointer;
+}
+
+button {
+    color: black;
+    background-color: white;
+    // padding: 7px 20px 7px;
+}
+
+p {
+    font-family: cursive;
+}
+
+h3 {
+    font-family: cursive;
+}

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { JobDescriptionComponent } from '../job-description/job-description.component';
+import { MatTooltipDefaultOptions } from '@angular/material/tooltip';
 
 @Component({
   selector: 'app-home',

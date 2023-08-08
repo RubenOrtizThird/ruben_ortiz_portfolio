@@ -6,6 +6,7 @@ import { JobDescriptionComponent } from './pages/job-description/job-description
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', redirectTo: 'home', pathMatch: 'full' },
   {path: 'job-description', component: JobDescriptionComponent},
 ];
 

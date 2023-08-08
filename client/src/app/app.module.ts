@@ -7,16 +7,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Pages
 import { HomeModule } from './pages/home/home.module';
-import { JobDescriptionModule } from './pages/job-description/job-description.module';
 
 // Components
 import { AngularMaterialModule } from 'angular-material/angular-material.module';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { JobDescriptionModule } from './pages/job-description/job-description.module';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

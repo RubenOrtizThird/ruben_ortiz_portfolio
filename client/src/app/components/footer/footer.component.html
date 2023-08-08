@@ -1,0 +1,29 @@
+<mat-toolbar color="primary" class="footer">
+  <div class="flex-item" *ngIf="!isMobile">
+    <h3>Contact</h3>
+    <div class="pic-header">
+      <mat-icon
+        class="pic-icon"
+        style="margin-right: 5px;"
+        (click)="openEmail()"
+      >
+        local_post_office</mat-icon
+      >
+
+      <img class="pic-icon linkedin_icon" (click)="openLinkedIn()" />
+    </div>
+  </div>
+
+  <div class="flex-item">
+    <p style="margin-bottom: 0;">
+      Want to leave your email for me<br/> to contact you? Leave it below!
+    </p>
+    <form class="form" class="input">
+      <mat-form-field>
+        <!-- <mat-label>Leave your email</mat-label> -->
+        <input matInput type="email" placeholder="email" />
+        <button mat-raised-button>Send</button>
+      </mat-form-field>
+    </form>
+  </div>
+</mat-toolbar>

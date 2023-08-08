@@ -6,7 +6,7 @@
     </h1>
 
     <h3 style="font-size: 40px; margin-top: 0; font-weight: 50;">
-      I'm a software Engineer that welcomes <br />
+      I'm a software engineer that welcomes <br />
       challenges and adapts to environmets quickly
     </h3>
   </div>
@@ -52,10 +52,11 @@
   <!-- CONTAINER 2 (WORK EXPERIENCE) -->
   <div class="container2">
     <div class="flex-item">
-      <h1>My work experience:</h1>
+      <h1 [ngClass]="{'titlePhone' : isMobile === true}">WORK EXPERIENCE</h1>
     </div>
 
     <!-- WORK ITEM 1 -->
+    <p matTooltip="Click for details" class="clickBelow">click below</p>
     <div class="flex-item item" (click)="openJobDescription('EY')">
       <h3 style="color: #43a6c6;">
         Ernst & Young
@@ -157,8 +158,8 @@
 
       <div>
         <p style="color: #848884;">
-          Worked on multiple GIS based projects through the course of one and a half
-          years.
+          Worked on multiple GIS based projects through the course of one and a
+          half years.
         </p>
       </div>
 
@@ -205,6 +206,23 @@
           </mat-chip>
         </mat-chip-list>
       </div>
+    </div>
+  </div>
+
+  <!-- CONTAINER 3 (EDUCATION) -->
+  <div class="container3">
+    <div>
+      <h1 matTooltip="Info about the action">EDUCATION</h1>
+    </div>
+    
+    <div class="sub-container3">
+      <p>
+        <span style="font-weight: bold;"
+          >Bachelor of Science in Computer Science</span
+        >, <span style="color: #43a6c6;">Texas A&M Corpus Christi</span>
+      </p>
+  
+      <p>May 2020</p>
     </div>
   </div>
 </div>
